@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    font-family: "Smooch Sans", sans-serif;
+    background-color: var(--co-white);
+} 
+  
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+ text-decoration: none;
+ color: unset;
+}
+
+h1,h2,h3,h4,h5,h6, p, figure, blockquote {
+    margin: 0;
+}
+
+.btn{
+    border: none ;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    color: var(--co--black);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Smooch Sans", sans-serif;
+    border-radius: 10px;
+    background-color: var(--co-brown2);
+}
+
+.btn:hover, 
+.btn:focus-visible
+{
+outline: 2px solid var(--co-brown2);
+cursor: pointer;
+}

@@ -1,0 +1,97 @@
+.about
+{
+    padding: 130px 0 60px 0 ;
+    background-color: var(--co-white);
+
+}
+/* .about_subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--co--black);
+
+} */
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about_title {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--co-barge);
+    max-width: 500px;
+    position: relative;
+}
+
+.about_title::before {
+    content: " How it works";
+    position: absolute;
+    top: -20px;
+    left: 0;
+     font-size: 24px;
+    font-weight: 600;
+    color: var(--co--black);
+   
+}
+
+.about_desc {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--co--black);
+    max-width: 670px;
+}
+
+.about_cards{
+    margin-top: 80px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+    gap: 20px;
+}
+
+.about_cards  .card:nth-child(2) {
+    margin-top: 230px;
+}
+
+@media (max-width: 1250px) {
+
+    /* .about_subtitle {
+        max-width: 600px;
+        text-align: center;
+    } */
+
+    .about_content {
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+}
+
+    .about_cards {
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .about_cards  .card:nth-child(2) {
+    margin-top: 0;
+}
+}
+
+@media (max-width: 570px) {
+
+    .about_content{
+        padding: 0 15px;
+    }
+    .about_title {
+        font-size: 35px;
+        
+    }
+    .about_desc {
+        font-size: 16px;
+       
+    }
+}
+
+
